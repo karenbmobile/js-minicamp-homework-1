@@ -1,16 +1,24 @@
 //Do not change any of the function names
 
 function multiplyByTen(num) {
+  return num * 10;
   //return num after multiplying it by ten
   //code here
 }
 
 function subtractFive(num) {
+  var number = num - 5;
+  return number;
   //return num after subtracting five
   //code here
 }
 
 function areSameLength(str1, str2) {
+  if (str1.length === str2.length) {
+    return true;
+  } else {
+    return false;
+  }
   //return true if the two strings have the same length
   //otherwise return false
   //code here
@@ -20,98 +28,147 @@ function areEqual(x, y) {
   //return true if x and y are the same
   //otherwise return false
   //code here
+  if (x === y) {
+    return true;
+  } else {
+    return false;
+  }
 }
 
 function lessThanNinety(num) {
   //return true if num is less than ninety
   //otherwise return false
   //code here
+  if (num < 90) {
+    return true;
+  } else {
+    return false;
+  }
 }
 
 function greaterThanFifty(num) {
   //return true if num is greater than fifty
   //otherwise return false
   //code here
+  if (num > 50) {
+    return true;
+  } else {
+    return false;
+  }
 }
 
 function add(x, y) {
   //add x and y together and return the value
   //code here
+  var sumOfNums = x + y;
+  return sumOfNums;
 }
 
 function subtract(x, y) {
   //subtract y from x and return the value
   //code here
+  var subtractNum = x - y;
+  return subtractNum;
 }
 
 function divide(x, y) {
   //divide x by y and return the value
   //code here
+  var divisionResult = x / y;
+  return divisionResult;
 }
 
 function multiply(x, y) {
   //multiply x by y and return the value
   //code here
+  var multiResult = x * y;
+  return multiResult;
 }
 
 function getRemainder(x, y) {
   //return the remainder from dividing x by y
   //code here
+  return x % y;
 }
 
 function isEven(num) {
   //return true if num is even
   //otherwise return false
   //code here
+  if (num % 2 === 0) {
+    return true;
+  } else {
+    return false;
+  }
 }
 
 function isOdd(num) {
   //return true if num is false
   //otherwise return false
   //code here
+  if (num % 2 != 0) {
+    return true;
+  } else {
+    return false;
+  }
 }
 
 function square(num) {
   //square num and return the new value
   //code here
+  var squaredNum = Math.pow(num,2);
+  return squaredNum;
 }
 
 function cube(num) {
   //cube num and return the new value
   //code here
+  var cubedNum = Math.pow(num,3);
+  return cubedNum;
 }
 
 function raiseToPower(num, exponent) {
   //raise num to whatever power is passed in as exponent
   //code here
+  return Math.pow(num,exponent);
 }
 
 function roundNumber(num) {
   //round num and return it
   //code here
+  var numberRounded = Math.round(num);
+  return numberRounded;
 }
 
 function roundUp(num) {
   //round num up and return it
   //code here
+  var numberRoundedUp = Math.ceil(num);
+  return numberRoundedUp;
 }
 
 function addExclamationPoint(str) {
   //add an exclamation point to the end of str and return the new string
   //'hello world' -> 'hello world!'
   //code here
+  var strongString = str + '!';
+  return strongString;
 }
 
 function combineNames(firstName, lastName) {
   //return firstName and lastName combined as one string and separated by a space.
   //'Lambda', 'School' -> 'Lambda School'
   //code here
+  var fullName = firstName + ' ' + lastName;
+  return fullName;
 }
 
 function getGreeting(name) {
   //Take the name string and concatenate other strings onto it so it takes the following form:
   //'Sam' -> 'Hello Sam!'
   //code here
+  var fullGreeting = 'Hello ' + name + '!';
+  return fullGreeting;
 }
 
 //If you can't remember these area formulas then head over to Google or look at the test code.
@@ -119,21 +176,27 @@ function getGreeting(name) {
 function getRectangleArea(length, width) {
   //return the area of the rectangle by using length and width
   //code here
+  return length * width;
 }
 
 function getTriangleArea(base, height) {
   //return the area of the triangle by using base and height
   //code here
+  return 0.5 * base * height;
 }
 
 function getCircleArea(radius) {
   //return the rounded area of the circle given the radius
   //code here
+  var areaOfCircle = Math.round(radius * radius * Math.PI);
+  return areaOfCircle;
 }
 
 function getRectangularPrismVolume(length, width, height) {
   //return the area of the 3D rectangular prism given the length, width, and height
   //code here
+  var prismVolume = length * width * height;
+  return prismVolume;
 }
 
 //Do not modify code below this line.
